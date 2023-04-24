@@ -6,17 +6,13 @@ import Footer from "./components/Footer";
 
 import jobs from "./jobs-data";
 
-console.log(jobs);
-
 function App() {
   return (
     <>
       <Header title="Job Board" />
 
       <main className="container">
-        <div>
-          <Jobs jobs={jobs} />
-        </div>
+        <Jobs jobs={jobs} />
       </main>
 
       <Footer />

@@ -1,5 +1,9 @@
 /* -- GENERAL -- */
 
+:root {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -27,11 +31,6 @@ main {
   padding: 20px;
 }
 
-main > div {
-  display: flex;
-  justify-content: center; /* essai pour centrer le bloc en gardant jc: start pour les jobs*/
-}
-
 /* -- Jobs --  */
 .jobs {
   border: 1px dashed black; /* debug */
@@ -43,10 +42,10 @@ main > div {
 }
 
 .job {
-  border: 5px solid black;
-  width: 200px;
-  padding: 10px;
+  width: calc((100% - 20px) / 3); /* 3 */
   aspect-ratio: 1;
+  border: 5px solid black;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
