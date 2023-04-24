@@ -1,0 +1,82 @@
+/* -- GENERAL -- */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* -- HEADER -- */
+
+header {
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* -- MAIN -- */
+
+main {
+  padding: 20px;
+}
+
+main > div {
+  display: flex;
+  justify-content: center; /* essai pour centrer le bloc en gardant jc: start pour les jobs*/
+}
+
+/* -- Jobs --  */
+.jobs {
+  border: 1px dashed black; /* debug */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: start;
+  align-content: center;
+}
+
+.job {
+  border: 5px solid black;
+  width: 200px;
+  padding: 10px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job h3 {
+  font-size: 1.5rem;
+}
+
+/* -- some colors -- */
+.job.red {
+  border-color: red;
+}
+.job.blue {
+  border-color: blue;
+}
+.job.green {
+  border-color: green;
+}
+
+/* -- FOOTER -- */
+
+footer {
+  padding: 20px 0;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+  font-weight: bold;
+}
