@@ -9,7 +9,7 @@ import jobs from "./jobs-data";
 function App() {
   return (
     <>
-      <Header title="Job Board" />
+      <Header title="The Job Board" />
 
       <main className="container">
         <Jobs jobs={jobs} />
